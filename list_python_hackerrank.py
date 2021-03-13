@@ -1,14 +1,14 @@
 auv = []
 
-N = int(raw_input())
+N = int(input())
 
 for i in range(0, N):
-    check = raw_input().split()
+    check = input().split()
 
     if check[0] == 'insert':
         auv.insert(int(check[1]), int(check[2]))
     elif check[0] == 'print':
-        print auv
+        print (auv)
     elif check[0] == 'remove':
         auv.remove(int(check[1]))
     elif check[0] == 'append':
